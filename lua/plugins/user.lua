@@ -137,7 +137,4 @@ return {
       },
     },
   },
-  {
-    "rebelot/heirline.nvim",
-  }
 }

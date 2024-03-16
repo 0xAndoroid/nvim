@@ -51,8 +51,8 @@ return {
       panel = {
         auto_refresh = true,
         keymap = {
-          jump_next = "..",
-          jump_prev = ",,",
+          jump_next = "]]",
+          jump_prev = "[[",
         },
       },
     },
