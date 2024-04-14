@@ -87,18 +87,29 @@ return {
               extraArgs = { "+nightly" },
             },
             completion = {
-              fullFunctionSignatures = {
+              -- fullFunctionSignatures = {
+              --   enable = true,
+              -- },
+              termSearch = {
                 enable = true,
+              },
+            },
+            lens = {
+              debug = {
+                enable = false,
+              },
+              run = {
+                enable = false,
               },
             },
             hover = {
               actions = {
-                references = {
-                  enable = false,
-                },
-                run = {
-                  enable = false,
-                },
+                -- references = {
+                --   enable = false,
+                -- },
+                -- run = {
+                --   enable = false,
+                -- },
               },
             },
           },
