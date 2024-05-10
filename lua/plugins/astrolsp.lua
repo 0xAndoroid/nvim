@@ -39,10 +39,16 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       "typst_lsp",
+      "circom_lsp",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
+      circom_lsp = {
+        cmd = { "circom-lsp" },
+        filetypes = { "circom" },
+        root_dir = require("lspconfig.util").root_pattern "package.json",
+      },
       typst_lsp = {
         cmd = { "typst-lsp" },
         filetypes = { "typst" },
