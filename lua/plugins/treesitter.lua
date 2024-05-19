@@ -9,6 +9,12 @@ return {
       "lua",
       "solidity",
       "typescript",
+      "rust",
+      "json",
+      "toml",
+      "yaml",
+      "markdown",
+      "bash",
     })
     -- opts.textobjects.move = {
     --   enable = true,

@@ -134,4 +134,16 @@ return {
   {
     "iden3/vim-circom-syntax",
   },
+  {
+    "hrsh7th/nvim-cmp",
+    opts = {
+      formatting = {
+        format = function(entry, vim_item)
+          vim_item.kind = require("lspkind").presets.default[vim_item.kind]
+          vim_item.menu = entry:get_completion_item().detail
+          return vim_item
+        end,
+      },
+    },
+  },
 }
