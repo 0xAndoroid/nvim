@@ -8,13 +8,8 @@ return {
     opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
       "lua",
       "solidity",
-      "typescript",
-      "rust",
-      "json",
-      "toml",
       "yaml",
       "markdown",
-      "bash",
     })
     -- opts.textobjects.move = {
     --   enable = true,
