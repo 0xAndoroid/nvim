@@ -146,4 +146,19 @@ return {
       },
     },
   },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      pickers = {
+        live_grep = {
+          file_ignore_patterns = { "node_modules", ".git", ".venv", "target", "dist", "build", "*lock.yml", ".next", ".cache", "*lock.yaml", "*.lock" },
+          additional_args = function(_) return { "--hidden" } end,
+        },
+        find_files = {
+          file_ignore_patterns = { "node_modules", ".git", ".venv", "target", "dist", "build", ".next", ".cache" },
+          hidden = true,
+        },
+      },
+    },
+  },
 }
