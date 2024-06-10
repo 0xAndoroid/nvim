@@ -151,11 +151,11 @@ return {
     opts = {
       pickers = {
         live_grep = {
-          file_ignore_patterns = { "node_modules", ".git", ".venv", "target", "dist", "build", "*lock.yml", ".next", ".cache", "*lock.yaml", "*.lock" },
+          file_ignore_patterns = { "node_modules", ".git", ".venv", "target", "dist", "build", "*lock.yml", ".next/", ".cache", "*lock.yaml", "*.lock", "public" },
           additional_args = function(_) return { "--hidden" } end,
         },
         find_files = {
-          file_ignore_patterns = { "node_modules", ".git", ".venv", "target", "dist", "build", ".next", ".cache" },
+          file_ignore_patterns = { "node_modules", ".git", ".venv", "target", "dist", "build", ".next/", ".cache", "public" },
           hidden = true,
         },
       },
