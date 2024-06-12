@@ -90,6 +90,9 @@ return {
               enable = true,
             },
             rustfmt = {
+              rangeFormatting = {
+                enable = true,
+              },
               extraArgs = { "+nightly" },
             },
             completion = {
