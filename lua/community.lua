@@ -86,7 +86,6 @@ return {
     },
   },
   { import = "astrocommunity.programming-language-support.csv-vim" },
-  { import = "astrocommunity.scrolling.cinnamon-nvim" },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   {
     "m4xshen/smartcolumn.nvim",
